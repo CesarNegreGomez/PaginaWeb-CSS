@@ -1,0 +1,232 @@
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para el cuerpo */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #eaf4f8;
+    color: #333;
+    line-height: 1.8;
+    background-image: url('../imagenes/g5.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: left;
+    padding: 20px;
+}
+
+/* Encabezados */
+h2 {
+    color: #0d6efd;
+    font-size: 2em;
+    text-align: center;
+    margin: 20px 0;
+    border-bottom: 2px solid #0d6efd;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #3a3a3a;
+    font-size: 1.5em;
+    margin: 15px 0;
+    text-align: left;
+}
+
+h4 {
+    font-size: 1.3em;
+    color: #0d6efd;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Imágenes */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+    border: 3px solid #000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Lista de navegación */
+ol {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 0;
+}
+
+ol li {
+    margin: 0 15px;
+}
+
+ol li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0d6efd;
+    padding: 10px 15px;
+    background-color: #ffffff;
+    border: 2px solid #0d6efd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+ol li a:hover {
+    background-color: #0d6efd;
+    color: #ffffff;
+}
+
+/* Párrafos */
+p {
+    font-size: 1.1em;
+    margin: 15px 0;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Separadores */
+hr {
+    margin: 30px 0;
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+}
+
+/* Estilo para enlaces destacados (Manga y Anime) */
+.links {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #0d6efd;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.links:hover {
+    background-color: #094d9b;
+    transform: scale(1.05);
+}
+
+/* Formulario */
+form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f8f9fa;
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #0d6efd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: #094d9b;
+}
+
+/* Pie de página */
+p:last-of-type {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Tabla de recompensas */
+#recompensas {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    font-size: 1em;
+    text-align: center;
+    background-color: #fefefe;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#recompensas th {
+    background-color: #0d6efd;
+    color: #ffffff;
+    padding: 12px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+}
+
+#recompensas td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#recompensas tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+#recompensas tr:hover {
+    background-color: #dbe9f9;
+}
+
+/* Lista de definiciones */
+dl {
+    width: 90%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+dt {
+    font-weight: bold;
+    color: #0d6efd;
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+dd {
+    margin-left: 20px;
+    color: #555;
+    line-height: 1.6;
+}
