@@ -1,0 +1,232 @@
+/* Estilo general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url('../imagenes/merry.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Fondo translúcido */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7); /* Capa translúcida */
+    z-index: -1;
+}
+
+/* Encabezados */
+h2 {
+    color: #0066cc;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h3, h4 {
+    color: #444;
+    margin-left: 10px;
+    text-align: center;
+}
+
+/* Estilo para h4 con id */
+#suscribete {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0066cc;
+    margin-top: 20px;
+}
+
+/* Imágenes */
+img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Lista de navegación */
+a {
+    text-decoration: none;
+    color: #0066cc;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #003366;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px auto;
+    text-align: center;
+}
+
+ol li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* Párrafos */
+p {
+    text-align: center;
+    margin: 10px 20px;
+}
+
+/* Separadores */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 20px auto;
+}
+
+/* Estilo para enlaces destacados (Manga y Anime) */
+.links {
+    display: inline-block;
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.links:hover {
+    background-color: #003366;
+    transform: scale(1.05);
+}
+
+/* Formulario */
+form {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    display: block;
+    background: #0066cc;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: #003366;
+}
+
+/* Pie de página */
+p:last-of-type {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 20px;
+}
+
+/* Estilo para tabla recompensas */
+#recompensas {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-size: 1em;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#recompensas th, #recompensas td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+#recompensas th {
+    background-color: #0066cc;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#recompensas tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+#recompensas tr:hover {
+    background-color: #e9f3ff;
+}
+
+/* Estilo para la lista de definiciones */
+dl {
+    width: 80%;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+}
+
+dt {
+    font-weight: bold;
+    color: #0066cc;
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+dd {
+    margin: 10px 0 20px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #0066cc;
+    border-radius: 5px;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+}
